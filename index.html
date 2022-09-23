@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="form-section">
+        <div class="form-container">
+            <form action="">
+                <div class="name-input">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="" id="name" placeholder="Enter your name">
+                </div>
+                <div class="email-input">
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="" id="email" placeholder="Enter your email">
+                </div>
+                <div class="hobbies-input">
+                    <label for="hobby">What do you love?</label>
+                    <select name="" id="hobby">
+                        <option value="">Select the hobbies</option>
+                        <option value="movies">Movies</option>
+                        <option value="sports">Sports</option>
+                        <option value="dancing">Dancing</option>
+                        <option value="singing">Singing</option>
+                    </select>
+                </div>
+                <div class="color-input">
+                    <label for="color">Choose a color</label>
+                    <input type="color" name="" id="color"value="#000000">
+                </div>
+                <div class="rating-input">
+                    <label for="rating">Rate the movie inception out of 10</label>
+                    <input onchange="showRange(this.value)" type="range" name="" id="rating" min="0" max="10">
+                    <span></span>
+                </div>
+                <div class="genre-input">
+                    <label for="">Book genre you love?</label>
+                    <div class="genre">
+                        <input onclick="sendValue('fiction')" type="radio" name="category" id="fiction" value="">
+                        <label for="fiction">Fiction</label>
+                    </div>
+                    <div class="genre">
+                        <input onclick="sendValue('non-fiction')" type="radio" name="category" id="non-fiction" value="">
+                        <label for="non-fiction">Non Fiction</label>
+                    </div>
+                    <div class="genre">
+                        <input onclick="sendValue('adventure')" type="radio" name="category" id="adventure" value="">
+                        <label for="adventure">Adventure</label>
+                    </div>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="" id="term">
+                    <label for="term">I Agree to Terms</label>
+                </div>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
